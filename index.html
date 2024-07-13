@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fuad Farhan</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color:#1a0549;
+        }
+        header {
+            background-color: #1f0b61 ;
+            color: #fff;
+            padding: 30px;
+            text-align: center;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #52ba75;
+            box-shadow: 0 4px 6px rgba(15, 145, 11, 0.712);
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+        }
+        nav a {
+            text-decoration: none;
+            color: white;
+            padding: 15px 20px;
+            display: inline-block;
+            transition: color 0.3s ease-in-out, background-color 0.3s ease-in-out, transform 0.3s ease-in-out;
+            font-size: 1rem;
+            border-radius: 10%;
+        }
+        nav a:hover {
+   
+            box-shadow: 0 4px 6px rgba(15, 145, 11, 0.712);
+            background-color: #030244;
+            color: black;
+            transform: scale(1.1);
+        }
+        .nav-item {
+            flex: 1;
+            text-align: center;
+        }
+        .nav-item:not(:last-child) {
+            border-right: 1px solid #444;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 20px auto;
+            padding: 0 20px;
+        }
+        .portfolio-item {
+            background-color: #1f0b61;
+            border-radius: 5px;
+            padding: 20px;
+            margin-bottom: 20px;
+            box-shadow: 0 10px 10px rgba(65, 226, 105, 0.712);
+        }
+        footer {
+            background-color: #333;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+
+        #navcol {
+            color: white;
+        }
+
+        #title {
+            color: rgb(169, 132, 178); 
+        }
+
+        p {
+            color: white;
+        }
+
+        p:hover {
+            color: #46bd7c;
+            border: 2px dotted;
+            border-color: #fff;
+            
+        }
+
+        #space {
+            padding: 10px;
+        }
+        
+    </style>
+</head>
+<body>
+
+<header>
+    <img src="logo.png" alt="Your Logo" style="max-width: 150px;">
+</header>
+
+<nav>
+    <a id = "navcol" href="#about">About</a>
+    <a  id = "navcol" href="#projects">Projects</a>
+    <a id = "navcol" href="#contact">Contact</a>
+</nav>
+
+<div class="container">
+    <section id="about" class="portfolio-item">
+        <h2 id ="title">About Me</h2>
+        <p>I am Fuad Farhan and I am a CS student currently. Check out the latest projects I have made using my skills in languages such as JavaScript, HTML/CSS, Java, Python, C++, and more to come.</p>
+    </section>
+    <h1 id ="title" >Projects</h1>
+    <section id="projects" class="portfolio-item">
+        <div>
+            <img src="swift.png" style="max-width: 70px;">
+            <img src="xcode.png" style="max-width: 70px;">
+            <h2 id ="title">MeCycle</h2>
+            <p>A meditation app.This app was created for users to take a few seconds to do a quick meditation exercise to improve focus and relief stress. </p>
+            <img src="project.png" style="max-width: 200px;">
+
+            <h2 id ="title">TwoCents</h2>
+            <img src="twocentslogo.png" style ="max-width: 150px">
+            <p>A student budget helper app. This app allows students to input how much money they would intend to spend in total and the app creates a budget for 
+                the student that allows the student to spend wisely on each purchase. 
+            </p>
+            <img id = "space" src ="Homescreenpicture.png" style="max-width: 200px;">
+            <img  id = "space" src = "programpicture.png" style="max-width:400px">
+        
+        </div>
+        <!-- Add more projects as needed -->
+    </section>
+    <section id="projects" class="portfolio-item">
+        <div>
+            <h2 id ="title">Blender 3D Models</h2>
+            <p>Blender is an application that allows creators to use tools to create and render 3d models of choice in real time.</p>
+            <img src="blender.png" style="max-width: 150px;">
+        </div>
+    </section>
+
+    <section id="contact" class="portfolio-item">
+        <h2 id ="title">Contact Info</h2>
+        <p>Email: fuadhoquefarhan05@gmail.com</p>
+    </section>
+</div>
+
+</body>
+</html>
